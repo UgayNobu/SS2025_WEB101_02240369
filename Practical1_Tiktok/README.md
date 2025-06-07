@@ -1,9 +1,109 @@
-This practical was a great experience for me to learn how to build a basic web application using Next.js, Tailwind CSS, and React Hook Form. At the beginning, I didn’t have much confidence working with Next.js, but after completing this step-by-step exercise, I feel more comfortable setting up projects and creating pages with proper layouts and routing.
+# Practical 1: TikTok Web Layout with Next.js
 
-In Part 1, I learned how to start a new Next.js project and structure it in a clean way. I created folders, layout components, and navigation links which helped organize the app better. I also learned how to use Tailwind CSS properly by cleaning up unnecessary styles and using utility classes.
+## Objective
+Build a TikTok-style web layout using Next.js, Tailwind CSS, and implement basic routing, layout, video feed, and form handling.
 
-In Part 2, I created the user interface similar to TikTok. I built different pages like profile, upload, explore, following, and live. The most interesting part for me was designing the VideoCard and VideoFeed components. It helped me understand how components can be reused and how layouts are managed using React.
+## Instructions
 
-Part 3 was all about form handling. This was new to me, but I enjoyed working with React Hook Form. I made login and signup pages, added input validations, and also learned how to show error messages and loading states. This made me realize the importance of good form UX and how form libraries can save a lot of time.
+### Part 1: Getting Started
+1. Open terminal and go to your project directory.
+2. Create a Next.js app:
+   ```bash
+   npx create-next-app@latest
+TypeScript: No
 
-Overall, this practical helped me build my frontend skills and made me more confident in using modern tools like Next.js and Tailwind CSS. I also improved my understanding of component-based design and form validation techniques. I’m happy with what I achieved in this practical and I look forward to building more complex applications.
+ESLint: Yes
+
+Tailwind CSS: Yes
+
+src/ folder: Yes
+
+App Router: Yes
+
+Clean up the default files:
+
+Edit src/app/page.js
+
+Remove unused CSS and keep only Tailwind directives:
+
+```css
+Copy code
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+Create project folders:
+
+```bash
+Copy code
+mkdir -p src/components/layout
+mkdir -p src/components/ui
+mkdir -p src/lib
+mkdir -p src/app/profile
+mkdir -p src/app/upload
+```
+Add basic layout in MainLayout.jsx and update src/app/layout.js.
+
+Create pages:
+
+/profile/page.jsx
+
+/upload/page.jsx
+
+/following/page.jsx
+
+/explore/page.jsx
+
+/live/page.jsx
+
+Start dev server:
+
+```bash
+Copy code
+npm run dev
+
+```
+### Part 2: Web Layout & Interface
+Install icons:
+
+```bash
+Copy code
+npm install react-icons
+```
+Build sidebar and main layout in MainLayout.jsx.
+
+Create:
+
+VideoCard.jsx
+
+VideoFeed.jsx
+
+Update:
+
+src/app/page.js to show the video feed
+
+### Part 3: Login and Registration
+Install:
+
+```bash
+Copy code
+npm install react-hook-form
+```
+Create:
+
+src/app/login/page.jsx
+
+src/app/signup/page.jsx
+
+Add validation using react-hook-form.
+
+Link login/signup in MainLayout.jsx.
+
+Test validation (empty fields, invalid email, mismatched password, etc.)
+
+Resources
+React Docs
+
+Next.js Docs
+
+React Hook Form

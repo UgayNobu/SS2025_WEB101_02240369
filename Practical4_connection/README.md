@@ -1,13 +1,77 @@
-This practical was a major step forward in my learning because I got to connect the frontend I had built earlier using Next.js to a real Express.js backend. The goal was to create a fully working TikTok-like app with features like user login, personalized feeds, video uploads, and following other users. It felt like I was finally building something close to a real-world social media app.
+### `Practical 4: Connecting TikTok Frontend to Backend`
 
-In the beginning, I learned how to set up an API client using Axios. I added authentication tokens automatically with interceptors, which helped me understand how JWT-based login systems work. Setting up environment variables and storing tokens safely in local storage also taught me best practices for handling auth.
+```markdown
+# Practical 4: Connecting TikTok Frontend to Backend
 
-I created an authentication context to manage user state across the entire application, which made things much more organized. Building reusable modals for login and signup was a bit tricky, but I managed to create clean UI components that worked well and showed error or success messages clearly.
+## Objective
+Integrate your Next.js frontend with an Express.js backend.
 
-After that, I connected the video feed to real data from the backend. Instead of mock videos, I fetched real ones, showed loading states, and handled likes and comments. It was exciting to see my app responding with real content, and I learned a lot about dynamic UI updates based on API calls.
+## Instructions
 
-One of the best parts was implementing social features like following/unfollowing users and viewing a "Following" feed. I also added a user discovery page and dynamic profile pages that displayed videos based on the user’s ID. These tasks made me think more deeply about how frontends and backends work together.
+### Part 1: API & Auth Setup
 
-Finally, I updated the upload page so logged-in users could upload videos with captions and thumbnails. It completed the app’s full-circle functionality.
+1. Install:
+   ```bash
+   npm install axios jwt-decode react-hot-toast
+Create src/lib/api-config.js with Axios instance.
 
-Overall, this practical helped me combine everything I’ve learned so far—frontend design, backend logic, API integration, state management, and authentication. It was challenging but very rewarding. I feel much more confident now in my ability to build full-stack applications from scratch.
+Add .env.local:
+
+```bash
+Copy code
+NEXT_PUBLIC_API_URL=http://localhost:8000/api
+```
+Create authContext.jsx and wrap in layout.js.
+
+Build UI components:
+
+Modal.jsx
+
+AuthForms.jsx
+
+AuthModal.jsx
+
+Add login/logout in MainLayout.jsx.
+
+### Part 2: Video Features
+Create:
+
+videoService.js (API calls)
+
+userService.js
+
+Update:
+
+VideoCard.jsx
+
+VideoFeed.jsx (fetch real data)
+
+Add pages:
+
+following/page.jsx
+
+explore-users/page.jsx
+
+profile/[userId]/page.jsx
+
+Update upload/page.jsx to allow uploads.
+
+### Part 3: Test Everything
+Register multiple users
+
+Upload videos
+
+Follow/unfollow
+
+Like/unlike
+
+Test login/logout flow
+
+Resources
+Axios
+
+JWT
+
+React Hook Form
+
+Express.js

@@ -1,7 +1,35 @@
-In this practical, I got hands-on experience with data visualisation in a React application, which I really enjoyed. I learned how to work with popular charting libraries like Recharts and react-chartjs-2, and used them to build different kinds of charts—such as line, pie, bar, and area charts. At first, I was a bit unsure about how to properly import and use components from these libraries, but as I kept going, things started to make more sense.
+### ✅ `Practical 7: Data Visualization with Charts`
 
-One of the most interesting parts was how each chart type needed slightly different configuration and data preparation. For example, the CustomerAcquisitionChart used Chart.js with custom options like stacked bars, while ProductCategoryChart used a pie chart from Recharts with custom colours and percentage labels. I also learned how to transform raw data into a format that works well with charts, like formatting dates and calculating percentages.
+```markdown
+# Practical 7: Data Visualization in React
 
-I also liked how everything came together in App.jsx, where all the charts were displayed in a dashboard-style layout. It gave me a good idea of how visualisations can be used in real-world analytics dashboards to show trends and insights. I realised that visualisation is not just about making things look good—it’s also about making data easier to understand at a glance.
+## Objective
+Build a dashboard using multiple chart libraries for analytics.
 
-Overall, this practical helped me get more confident working with React components and external libraries. I also understood the importance of data formatting and responsive design in visual analytics. I feel like this is a very useful skill that I can apply in future projects, especially when building dashboards or reports for users.
+## Instructions
+
+### Setup
+
+Clone the starter project:
+```bash
+git clone https://github.com/syangche/Data-Visualisation.git
+```
+
+### Part 1: Create Chart Components
+MonthlySalesChart.jsx (Line chart using Recharts)
+
+ProductCategoryChart.jsx (Pie chart using Recharts)
+
+CustomerAcquisitionChart.jsx (Bar chart using react-chartjs-2)
+
+WeeklyVisitorsChart.jsx (Area chart using react-chartjs-2)
+
+### Part 2: Add All to App.jsx
+Import and render the above chart components inside the main dashboard layout.
+
+Key Points
+Use props to pass data into chart components
+
+Make charts responsive
+
+Transform data for display
