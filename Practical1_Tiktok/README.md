@@ -1,36 +1,9 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This practical was a great experience for me to learn how to build a basic web application using Next.js, Tailwind CSS, and React Hook Form. At the beginning, I didn’t have much confidence working with Next.js, but after completing this step-by-step exercise, I feel more comfortable setting up projects and creating pages with proper layouts and routing.
 
-## Getting Started
+In Part 1, I learned how to start a new Next.js project and structure it in a clean way. I created folders, layout components, and navigation links which helped organize the app better. I also learned how to use Tailwind CSS properly by cleaning up unnecessary styles and using utility classes.
 
-First, run the development server:
+In Part 2, I created the user interface similar to TikTok. I built different pages like profile, upload, explore, following, and live. The most interesting part for me was designing the VideoCard and VideoFeed components. It helped me understand how components can be reused and how layouts are managed using React.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Part 3 was all about form handling. This was new to me, but I enjoyed working with React Hook Form. I made login and signup pages, added input validations, and also learned how to show error messages and loading states. This made me realize the importance of good form UX and how form libraries can save a lot of time.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Overall, this practical helped me build my frontend skills and made me more confident in using modern tools like Next.js and Tailwind CSS. I also improved my understanding of component-based design and form validation techniques. I’m happy with what I achieved in this practical and I look forward to building more complex applications.
